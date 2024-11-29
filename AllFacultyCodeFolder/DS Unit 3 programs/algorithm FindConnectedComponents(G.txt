@@ -1,0 +1,31 @@
+algorithm FindConnectedComponents(G):
+    // INPUT
+    //    G = an undirected graph with vertices V and edges E
+    // OUTPUT
+    //    The number of connected components in G
+
+    Component_Count <- 0
+    Visited <- an empty map from vertices to boolean values 
+
+    for vertex k in V:
+        Visited[k] <- false
+
+    for ertex k in V:
+        if not Visited[k]:
+            DFS(V, k)
+            Component_Count <- Component_Count + 1
+
+    print Component_Count
+
+algorithm DFS(V, k):
+    // INPUT
+    //    V = the set of vertices in the graph
+    //    k = the current vertex being explored
+    // OUTPUT
+    //    Executes a depth-first search starting from vertex k,
+    //    marking all reachable vertices as visited.
+
+    Visited[k] <- true
+    for vertex p in Adj[k]: // Adj[k] is the adjacency list of k
+        if not Visited[p]:
+            DFS(V, p)
