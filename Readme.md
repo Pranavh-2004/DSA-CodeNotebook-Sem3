@@ -69,3 +69,12 @@ This repository is **not intended for submission or official use**. It is a pers
 - Debugging or optimization may still be required for personal code.
 
 For accurate and verified course content, refer to the **Unit X** folders or the **AllFacultyCodeFolder**.
+
+---
+
+## Additional Resources
+
+For excellent DSA notes and references, check out:
+
+- [Anshul Paruchuri's Notes on DSA](https://pissunotes.notion.site/Data-Structures-and-Algorithms-67f2340c47ad4af6ad152c2b3dbac483)
+- [Anshul Paruchuri's GitHub](https://github.com/amateurmonke)
